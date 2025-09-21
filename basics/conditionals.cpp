@@ -46,10 +46,10 @@ int main(){
 
     // switch case.
     switch(a){
-        case a == 'A';
+        case 'A':
             // ...
             break
-        case a == 'B';
+        case 'B':
             // ...
             break
         default:
