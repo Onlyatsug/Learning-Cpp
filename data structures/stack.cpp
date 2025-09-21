@@ -16,15 +16,25 @@ int main(){
 
     // ver tamanho atual da pilha.
     cout << "tam_pilha: " << itens.size() << "\n";
-
+    
     // ver item do topo.
     cout << "top_item: " << itens.top() << "\n";
-
+    
     // tirando um elemento da pilha.
     itens.pop(); // perceba-se que somento o elemento do topo sai.
     cout << "new_top_item: " << itens.top() << "\n";
-
-
-
+    
+    // o método verificar se pilha vazia e retorna lógico.
+    if(itens.empty()){
+        cout << "Vazia!\n";
+    } else {
+        cout << "Tem algo!\n";
+        // remover todos os itens.
+        while(!itens.empty()){
+            itens.pop();
+        }
+        cout << "Sobrou: " << itens.size() << " itens\n";
+    }
+    
     return 0;
 }
